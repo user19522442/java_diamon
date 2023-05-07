@@ -1,0 +1,6 @@
+package DemoSpringMVC.Dto;
+
+public class ProductsDto {
+	private long id_product;
+
+}

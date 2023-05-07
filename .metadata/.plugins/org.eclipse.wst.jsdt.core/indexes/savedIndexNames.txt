@@ -1,8 +1,6 @@
-INDEX VERSION 1.4+D:\java\java_project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-598425054.index
-1287337160.index
-1309016366.index
-662892276.index
+INDEX VERSION 1.4+C:\Users\Admin\Desktop\java_diamon\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 3794454238.index
-1019675556.index
-3729259140.index
+3815366461.index
+2032454226.index
+1011028106.index
+738027700.index

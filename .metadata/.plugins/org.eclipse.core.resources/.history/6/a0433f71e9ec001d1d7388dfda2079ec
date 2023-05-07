@@ -1,0 +1,27 @@
+package DemoSpringMVC.Dto;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+public class ProductsDtoMapper implements RowMapper<ProductsDto>{
+
+	public ProductsDto mapRow(ResultSet rs, int rowNum) throws SQLException {
+		ProductsDto products = new ProductsDto();
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_category(rs.getInt("id_category"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		products.setId_product(rs.getLong("id_product"));
+		return products;
+	}
+
+}

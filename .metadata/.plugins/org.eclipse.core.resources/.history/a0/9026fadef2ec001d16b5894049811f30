@@ -225,7 +225,7 @@ New Products
 								VIEW</a> <a href="product_details.html"><img
 								src="<c:url value ="/assets/user/img/d.jpg"/>" alt=""></a>
 							<div class="caption">
-								<h5>${(loop.index+1)}</h5>
+								<h5>Manicure & Pedicure</h5>
 								<h4>
 									<a class="defaultBtn" href="product_details.html"
 										title="Click to view"><span class="icon-zoom-in"></span></a> <a
@@ -241,7 +241,8 @@ New Products
 						<ul class="thumbnails">
 					</c:if>
 				</c:if>
-				
+
+				</ul>
 				</c:forEach>
 				</c:if>
 			</div>

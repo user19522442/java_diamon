@@ -241,7 +241,6 @@ New Products
 						<ul class="thumbnails">
 					</c:if>
 				</c:if>
-				
 				</c:forEach>
 				</c:if>
 			</div>

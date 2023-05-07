@@ -1,0 +1,5 @@
+package DemoSpringMVC.Dao;
+
+public class BaseDao {
+
+}

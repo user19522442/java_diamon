@@ -1,0 +1,5 @@
+package DemoSpringMVC.entity;
+
+public class Slides {
+
+}

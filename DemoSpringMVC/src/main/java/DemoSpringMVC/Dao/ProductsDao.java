@@ -5,8 +5,9 @@ import java.util.List;
 import org.springframework.stereotype.Repository;
 
 import DemoSpringMVC.Dto.ProductsDto;
+import DemoSpringMVC.Dto.ProductsDtoMapper;
 @Repository
-public class ProductsDao {
+public class ProductsDao extends BaseDao {
 
 	private String SqlString() {
 		StringBuffer  sql = new StringBuffer();
@@ -32,15 +33,17 @@ public class ProductsDao {
 		sql.append("INNER JOIN ");
 		sql.append("colors AS c ");
 		sql.append("ON p.id = c.id_product ");
-		sql.append("GROUP BY p.id, c.id_product");
-		sql.append("ORDER BY RAND()");
+		sql.append("GROUP BY p.id, c.id_product ");
+		sql.append("ORDER BY RAND() ");
+		sql.append("LIMIT 9 ");
 		return sql.toString();
 	}
 	
 	public List<ProductsDto> GetDataProducts() {
-		
+		String sql = SqlString();
+		List<ProductsDto> liProducts = _jdbcTemplate.query(sql, new ProductsDtoMapper());
 				
-		return null;
+		return liProducts;
 	}
 
 }

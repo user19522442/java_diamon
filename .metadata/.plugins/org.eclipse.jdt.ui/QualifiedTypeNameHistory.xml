@@ -17,4 +17,5 @@
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.ProductsDao"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.BaseDao"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDtoMapper"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 </qualifiedTypeNameHistroy>

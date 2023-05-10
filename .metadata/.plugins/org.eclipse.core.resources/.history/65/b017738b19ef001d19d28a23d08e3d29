@@ -1,0 +1,14 @@
+package DemoSpringMVC.Service.User;
+
+import java.util.List;
+
+import DemoSpringMVC.Dto.ProductsDto;
+
+public class CategoryServiceImpl implements ICategoryService {
+
+	public List<ProductsDto> GetDataProductsPaginate(int start, int end) {
+		
+		return null;
+	}
+
+}

@@ -168,15 +168,15 @@ background-color
 
 	<div class="pagination">
 		<a href="#">&laquo;</a>
-		<c:forEach var="item" begin="${ paginateInfo.start }"
-			end="${ paginateInfo.end }" varStatus="loop">
+		<c:forEach var="item" begin="1" end="${ paginateInfo.totalPage }" varStatus="loop">
 			<c:if test="${(loop.index) == paginateInfo.currentPage }">
 				<a href="<c:url value ="/san-pham/${idCategory }/${ loop.index }"/>"
 					class="active">${ loop.index }</a>
 			</c:if>
 
 			<c:if test="${(loop.index) != paginateInfo.currentPage }">
-				<a href="#">${ loop.index }</a>
+				<a href="<c:url value ="/san-pham/${idCategory }/${ loop.index }"/>"
+					>${ loop.index }</a>
 			</c:if>
 
 		</c:forEach>

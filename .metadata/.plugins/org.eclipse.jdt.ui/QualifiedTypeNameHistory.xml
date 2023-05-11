@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.BaseDao"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDtoMapper"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
@@ -16,7 +15,6 @@
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Controller.User.BaseController"/>
-<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.PaginatesDto"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.PaginateService"/>
@@ -27,4 +25,6 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDto"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.CategoryServiceImpl"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 </qualifiedTypeNameHistroy>

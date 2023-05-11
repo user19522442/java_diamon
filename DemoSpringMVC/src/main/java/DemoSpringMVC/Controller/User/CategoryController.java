@@ -25,8 +25,11 @@ public class CategoryController extends BaseController{
 		_mvShare.setViewName("user/products/category");
 		int totalData = categoryService.GetAllProductsByID(Integer.parseInt(id)).size();
 		PaginatesDto paginateInfo = paginateService.GetInfoPaginates(totalData, totalProductsPage,1);
+		_mvShare.addObject("idCategory",id);
 		_mvShare.addObject("paginateInfo",paginateInfo);
 		_mvShare.addObject("productsPaginate",categoryService.GetDataProductsPaginate(paginateInfo.getStart(), paginateInfo.getEnd()));
 		return _mvShare;
 	}
+	
+	
 }

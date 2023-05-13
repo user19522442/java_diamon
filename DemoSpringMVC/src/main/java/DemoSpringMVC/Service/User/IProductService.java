@@ -1,5 +1,7 @@
 package DemoSpringMVC.Service.User;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import DemoSpringMVC.Dto.ProductsDto;
@@ -7,5 +9,6 @@ import DemoSpringMVC.Dto.ProductsDto;
 @Service
 public interface IProductService {
 	
-	public ProductsDto GetProductsByID(long id);
+	public ProductsDto GetProductByID(long id);
+	public List<ProductsDto> GetProductsByIDCategory(int id);
 }

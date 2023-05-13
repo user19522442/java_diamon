@@ -17,7 +17,9 @@ public class ProductController extends BaseController{
 	public ModelAndView Index(@PathVariable long id) {
 		
 		_mvShare.setViewName("user/products/product");
-		_mvShare.addObject("product",_productService.GetProductsByID(id));
+		_mvShare.addObject("product",_productService.GetProductByID(id));
+		int idCategory = _productService.GetProductByID(id).getId_category();
+		_mvShare.addObject("productByIDCategory",_productService.GetProductsByIDCategory(idCategory));
 		return _mvShare;
 	}
 }

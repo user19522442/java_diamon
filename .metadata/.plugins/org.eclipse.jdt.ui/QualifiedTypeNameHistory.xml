@@ -23,10 +23,10 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Controller.User.BaseController"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDto"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.ProductsDao"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.IProductService"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDto"/>
 </qualifiedTypeNameHistroy>

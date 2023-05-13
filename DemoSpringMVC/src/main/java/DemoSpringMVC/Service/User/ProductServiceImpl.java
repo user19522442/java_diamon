@@ -11,9 +11,12 @@ import DemoSpringMVC.Dto.ProductsDto;
 public class ProductServiceImpl implements IProductService{
 	@Autowired
 	ProductsDao productsDao = new ProductsDao();
-	public ProductsDto GetProductsByID(long id) {
+	public ProductsDto GetProductByID(long id) {
 		List<ProductsDto> listProducts = productsDao.GetProductsByID(id);
 		return listProducts.get(0);
+	}
+	public List<ProductsDto> GetProductsByIDCategory(int id) {		
+		return productsDao.GetAllProductsByID(id);
 	}
 
 }

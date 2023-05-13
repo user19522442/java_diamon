@@ -20,11 +20,12 @@
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.PaginateService"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.ICategoryService"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.ProductsDao"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDto"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.CategoryServiceImpl"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDto"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

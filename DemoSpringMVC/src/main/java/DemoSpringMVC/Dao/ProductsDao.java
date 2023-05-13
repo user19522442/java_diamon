@@ -1,5 +1,6 @@
 package DemoSpringMVC.Dao;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
@@ -92,9 +93,15 @@ public class ProductsDao extends BaseDao {
 	}
 	
 	public List<ProductsDto> GetDataProductsPaginate(int id, int start, int totalPage) {
-		String sql = SqlProductsPaginate(id, start, totalPage);
-		List<ProductsDto> liProducts = _jdbcTemplate.query(sql, new ProductsDtoMapper());
+		StringBuffer sqlGetDataByID = SqlProductsByID(id);
+		List<ProductsDto> listProductsByID = _jdbcTemplate.query(sqlGetDataByID.toString(), new ProductsDtoMapper());
+		List<ProductsDto> listProducts = new ArrayList<ProductsDto>();
+		if(listProductsByID.size() > 0) {
+			String sql = SqlProductsPaginate(id, start, totalPage);
+			listProducts = _jdbcTemplate.query(sql, new ProductsDtoMapper());
+		}
+		
 
-		return liProducts;
+		return listProducts;
 	}
 }

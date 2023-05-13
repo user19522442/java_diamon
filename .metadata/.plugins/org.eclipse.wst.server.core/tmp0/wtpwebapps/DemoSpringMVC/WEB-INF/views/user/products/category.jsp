@@ -29,13 +29,6 @@
 .pagination
 
 
-
-
- 
-
-
-
-
 a
 
 
@@ -118,7 +111,6 @@ background-color
 				<option>Cao - Thấp</option>
 			</select>
 		</div>
-		<h3>Danh sách sản phẩm</h3>
 		<c:if test="${ productsPaginate.size() > 0}">
 			<div class="row-fluid">
 				<ul class="thumbnails">

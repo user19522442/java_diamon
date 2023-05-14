@@ -3,10 +3,14 @@ package DemoSpringMVC.Dao;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import DemoSpringMVC.Dto.CartDto;
 import DemoSpringMVC.Dto.ProductsDto;
-
+@Repository
 public class CartDao extends BaseDao {
+	@Autowired
 	ProductsDao productsDao = new ProductsDao();
 
 	public HashMap<Long, CartDto> AddCart(long id, HashMap<Long, CartDto> cart) {

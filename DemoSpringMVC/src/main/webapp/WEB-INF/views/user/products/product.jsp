@@ -15,7 +15,6 @@
 	<!-- 
 Body Section 
 -->
-<h1>${ Cart.size() }</h1>
 	<div class="row product-content">
 		<div id="sidebar" class="span3">
 			<div class="well well-small">
@@ -137,7 +136,8 @@ Body Section
 						<h3>${ product.name }</h3>
 						<hr class="soft" />
 
-						<form class="form-horizontal qtyFrm">
+						<form class="form-horizontal qtyFrm" method="get"
+							action='<c:url value ="/AddCart/${ product.id_product }"/>'>
 							<div class="control-group">
 								<label class="control-label"><span><strong>
 											<fmt:formatNumber type="number" groupingUsed="true"
@@ -164,7 +164,7 @@ Body Section
 							<p>${ product.title }
 							<p>
 								<button type="submit" class="shopBtn">
-									<span class=" icon-shopping-cart"></span> Add to cart
+									<span class=" icon-shopping-cart"></span> Thêm giỏ hàng
 								</button>
 						</form>
 					</div>
@@ -185,17 +185,19 @@ Body Section
 
 					</div>
 					<div class="tab-pane fade" id="profile">
-					<c:set var = "countlist" value = "${ productByIDCategory.size() }"/>
-					<c:if test="${productByIDCategory.size() > 6}">
-						<c:set var = "countlist" value ="6"/>
-					</c:if>
-					<c:forEach var="item" items="${ productByIDCategory }" begin="1" end="${ countlist }" varStatus="loop">
-						
+						<c:set var="countlist" value="${ productByIDCategory.size() }" />
+						<c:if test="${productByIDCategory.size() > 6}">
+							<c:set var="countlist" value="6" />
+						</c:if>
+						<c:forEach var="item" items="${ productByIDCategory }" begin="1"
+							end="${ countlist }" varStatus="loop">
+
 
 
 							<div class="row-fluid">
 								<div class="span2">
-									<img src="<c:url value ="/assets/user/img/${ item.img }"/>" alt="">
+									<img src="<c:url value ="/assets/user/img/${ item.img }"/>"
+										alt="">
 								</div>
 								<div class="span6">
 									<h5>${ item.name }</h5>
@@ -203,10 +205,11 @@ Body Section
 								</div>
 								<div class="span4 alignR">
 									<form class="form-horizontal qtyFrm">
-										<h3>><strong>
-											<fmt:formatNumber type="number" groupingUsed="true"
-												value="${item.price}" /> đ
-									</strong></h3>
+										<h3>
+											><strong> <fmt:formatNumber type="number"
+													groupingUsed="true" value="${item.price}" /> đ
+											</strong>
+										</h3>
 										<div class="btn-group">
 											<a href="product_details.html" class="defaultBtn"><span
 												class=" icon-shopping-cart"></span> Add to cart</a> <a

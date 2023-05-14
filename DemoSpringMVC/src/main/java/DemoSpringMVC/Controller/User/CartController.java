@@ -2,6 +2,7 @@ package DemoSpringMVC.Controller.User;
 
 import java.util.HashMap;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +19,7 @@ public class CartController extends BaseController{
 	private CartServiceImpl cartService = new CartServiceImpl();
 	@RequestMapping(value = "AddCart/{id}")
 	
-	public String AddCart(HttpSession session, @PathVariable long id) {
+	public String AddCart(HttpServletRequest request,HttpSession session, @PathVariable long id) {
 		HashMap<Long, CartDto> cart = (HashMap<Long, CartDto>)session.getAttribute("Cart");
 		
 		if(cart == null) {
@@ -26,6 +27,9 @@ public class CartController extends BaseController{
 		}
 		cart = cartService.AddCart(id, cart);
 		session.setAttribute("Cart", cart);
-		return "redirect:/chi-tiet-san-pham/"+ id;
+		session.setAttribute("TotalQuantyCart", cartService.TotalQaunty(cart));
+		session.setAttribute("TotalPriceCart", cartService.TotalPrice(cart));
+//		return "redirect:/chi-tiet-san-pham/"+ id;
+		return "redirect:"+ request.getHeader("Referer");
 	}
 }

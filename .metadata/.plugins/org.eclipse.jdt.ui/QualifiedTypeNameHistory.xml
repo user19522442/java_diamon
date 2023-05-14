@@ -38,4 +38,5 @@
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.CartDto"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.CartServiceImpl"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 </qualifiedTypeNameHistroy>

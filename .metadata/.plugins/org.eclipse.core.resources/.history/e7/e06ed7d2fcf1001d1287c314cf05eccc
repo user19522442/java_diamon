@@ -51,18 +51,14 @@ public class CartDao extends BaseDao {
 	}
 
 	public int TotalQaunty(HashMap<Long, CartDto> cart) {
-		int totalQuanty = 0;
-		for (Map.Entry<Long,CartDto> itemCart : cart.entrySet()) {
-			totalQuanty += itemCart.getValue().getQuanty();
+		for (Map.Entry<Long,CartDto> itemCart : cart) {
+			
 		}
-		return totalQuanty;
+		return 0;
 	}
 
 	public double TotalPrice(HashMap<Long, CartDto> cart) {
-		int totalPrice = 0;
-		for (Map.Entry<Long,CartDto> itemCart : cart.entrySet()) {
-			totalPrice += itemCart.getValue().getTotalPrice();
-		}
-		return totalPrice;
+
+		return 0;
 	}
 }

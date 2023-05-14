@@ -16,7 +16,6 @@
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.PaginatesDto"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.PaginateService"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.ICategoryService"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.CategoryServiceImpl"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -24,11 +23,17 @@
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.IProductService"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.BaseDao"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.CartDto"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.ProductsDao"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDto"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Service.User.ICartService"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Dao.CartDao"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>

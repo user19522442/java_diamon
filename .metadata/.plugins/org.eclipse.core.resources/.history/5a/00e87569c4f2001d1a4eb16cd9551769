@@ -1,0 +1,5 @@
+package DemoSpringMVC.Entity;
+
+public class UsersEntity {
+
+}

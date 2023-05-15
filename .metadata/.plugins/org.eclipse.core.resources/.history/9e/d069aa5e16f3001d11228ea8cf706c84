@@ -1,0 +1,7 @@
+package DemoSpringMVC.Service.User;
+
+import DemoSpringMVC.Entity.Users;
+
+public interface IAccountService {
+	public int AddAccount(Users user); 
+}

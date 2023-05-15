@@ -1,0 +1,12 @@
+package DemoSpringMVC.Service.User;
+
+import DemoSpringMVC.Entity.Users;
+
+public class AccountServiceImpl {
+
+	public void AddAccount(Users user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -16,22 +16,18 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.IProductService"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="DemoSpringMVC.Dao.BaseDao"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.ProductsDao"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.ProductsDto"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.ICartService"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.CartDao"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.CartDto"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.CartServiceImpl"/>
-<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
 <fullyQualifiedTypeName name="org.springframework.web.servlet.ModelAndView"/>
@@ -42,4 +38,12 @@
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Entity.Users"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Service.User.AccountServiceImpl"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Service.User.IAccountService"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Dao.BaseDao"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Dao.UsersDao"/>
+<fullyQualifiedTypeName name="org.mindrot.jbcrypt.BCrypt"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>

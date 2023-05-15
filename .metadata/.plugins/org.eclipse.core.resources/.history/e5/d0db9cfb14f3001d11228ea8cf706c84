@@ -1,0 +1,12 @@
+package DemoSpringMVC.Dao;
+
+import DemoSpringMVC.Entity.Users;
+
+public class UsersDao extends BaseDao{
+
+	public int AddAcount(Users user) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

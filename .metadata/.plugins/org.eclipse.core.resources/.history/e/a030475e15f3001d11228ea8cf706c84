@@ -1,0 +1,12 @@
+package DemoSpringMVC.Service.User;
+
+import DemoSpringMVC.Dao.UsersDao;
+import DemoSpringMVC.Entity.Users;
+
+public class AccountServiceImpl implements IAccountService{
+	UsersDao usersDao = new UsersDao();
+	public int AddAccount(Users user) {
+		return usersDao.AddAcount(user);
+	}
+
+}

@@ -156,29 +156,31 @@
 				<div class="span4">
 					<div class="well">
 						<h5>Đăng nhập vào hệ thống</h5>
-						<form>
+						
+						<c:if test="${ check }"><h1>${ LoginVariable }</h1></c:if>
+						<form:form action="dang-nhap" method="POST" modelAttribute="user">
+						
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Email</label>
 								<div class="controls">
-									<input class="span3" type="text" placeholder="Mời nhập email">
+								<form:input class="span3" type="email" path="user" placeholder="Mời nhập email"/>
 								</div>
 							</div>
 
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Mật khẩu</label>
 								<div class="controls">
-									<input class="span3" type="text"
-										placeholder="Mời nhập mật khẩu">
+									<form:input class="span3" type="password" path="password" placeholder="Mời nhập mật khẩu"/>
 								</div>
 							</div>
 
 							<div class="control-group">
 								<div class="controls">
 									<button type="submit" class="defaultBtn">Đăng nhập</button>
-									<a href="#">Quên mật khẩu</a>
+									<a href="#">Quên mật khẩu?</a>
 								</div>
 							</div>
-						</form>
+						</form:form>
 					</div>
 				</div>
 			</div>

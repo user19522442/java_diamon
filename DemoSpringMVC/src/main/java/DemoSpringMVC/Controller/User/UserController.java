@@ -1,5 +1,7 @@
 package DemoSpringMVC.Controller.User;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -31,6 +33,22 @@ public class UserController extends BaseController{
 			_mvShare.addObject("status", "Đăng ký tài khoản thất bại");
 		}
 		_mvShare.setViewName("user/account/register");
+		return _mvShare;
+	}
+	
+	
+	@RequestMapping(value = "/dang-nhap", method = RequestMethod.POST)
+	public ModelAndView Login(HttpSession session,@ModelAttribute("user") Users user) {
+		boolean check = accountService.CheckAccount(user);
+		if(check) {
+			_mvShare.setViewName("redirect:/");
+			_mvShare.addObject("check", "false");
+			session.setAttribute("LoginInfo", user);
+		}
+		else {
+			_mvShare.addObject("check", "true");
+			_mvShare.addObject("LoginVariable", "Đăng nhập thất bại");
+		}
 		return _mvShare;
 	}
 }

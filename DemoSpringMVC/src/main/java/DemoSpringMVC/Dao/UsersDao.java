@@ -2,6 +2,7 @@ package DemoSpringMVC.Dao;
 
 import org.springframework.stereotype.Repository;
 
+import DemoSpringMVC.Entity.MapperUsers;
 import DemoSpringMVC.Entity.Users;
 @Repository
 public class UsersDao extends BaseDao{
@@ -29,6 +30,13 @@ public class UsersDao extends BaseDao{
 		sql.append(")");
 		int insert = _jdbcTemplate.update(sql.toString());
 		return insert;
+	}
+
+	public Users GetUserByAcc(Users user) {
+		
+		String sql = "SELECT * FROM users WHERE user = '"+user.getUser()+"'";
+		Users result = _jdbcTemplate.queryForObject(sql, new MapperUsers());
+		return result;
 	}
 
 }

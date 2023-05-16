@@ -23,7 +23,6 @@
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="com.sun.javafx.collections.MappingChange.Map"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dto.CartDto"/>
@@ -34,16 +33,19 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Controller.User.BaseController"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
-<fullyQualifiedTypeName name="DemoSpringMVC.Entity.Users"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.AccountServiceImpl"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Service.User.IAccountService"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.BaseDao"/>
 <fullyQualifiedTypeName name="DemoSpringMVC.Dao.UsersDao"/>
-<fullyQualifiedTypeName name="org.mindrot.jbcrypt.BCrypt"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Entity.Users"/>
+<fullyQualifiedTypeName name="org.apache.tomcat.jni.User"/>
+<fullyQualifiedTypeName name="DemoSpringMVC.Entity.MapperUsers"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.mindrot.jbcrypt.BCrypt"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>

@@ -118,29 +118,33 @@
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Email</label>
 								<div class="controls">
-									<form:input class="span3" type="email" path="user" placeholder="Mời nhập email"/>
-									
+									<form:input class="span3" type="email" path="user"
+										placeholder="Mời nhập email" />
+
 								</div>
 							</div>
 
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Mật khẩu</label>
 								<div class="controls">
-									<form:input class="span3" type="password" path="password" placeholder="Mời nhập mật khẩu"/>
+									<form:input class="span3" type="password" path="password"
+										placeholder="Mời nhập mật khẩu" />
 								</div>
 							</div>
 
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Họ và tên</label>
 								<div class="controls">
-									<form:input class="span3" type="text" path="display_name" placeholder="Mời nhập họ và tên"/>
+									<form:input class="span3" type="text" path="display_name"
+										placeholder="Mời nhập họ và tên" />
 								</div>
 							</div>
 
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Địa chỉ</label>
 								<div class="controls">
-									<form:input class="span3" type="text" path="address" placeholder="Mời nhập địa chỉ"/>
+									<form:input class="span3" type="text" path="address"
+										placeholder="Mời nhập địa chỉ" />
 								</div>
 							</div>
 
@@ -156,21 +160,25 @@
 				<div class="span4">
 					<div class="well">
 						<h5>Đăng nhập vào hệ thống</h5>
-						
-						<c:if test="${ check }"><h1>${ LoginVariable }</h1></c:if>
+
+						<c:if test="${ check }">
+							<h1>${ LoginVariable }</h1>
+						</c:if>
 						<form:form action="dang-nhap" method="POST" modelAttribute="user">
-						
+
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Email</label>
 								<div class="controls">
-								<form:input class="span3" type="email" path="user" placeholder="Mời nhập email"/>
+									<form:input class="span3" type="email" path="user"
+										placeholder="Mời nhập email" />
 								</div>
 							</div>
 
 							<div class="control-group">
 								<label class="control-label" for="inputEmail">Mật khẩu</label>
 								<div class="controls">
-									<form:input class="span3" type="password" path="password" placeholder="Mời nhập mật khẩu"/>
+									<form:input class="span3" type="password" path="password"
+										placeholder="Mời nhập mật khẩu" />
 								</div>
 							</div>
 

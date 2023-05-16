@@ -1,5 +1,6 @@
 package DemoSpringMVC.Controller.User;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,8 +40,8 @@ public class UserController extends BaseController{
 	
 	@RequestMapping(value = "/dang-nhap", method = RequestMethod.POST)
 	public ModelAndView Login(HttpSession session,@ModelAttribute("user") Users user) {
-		boolean check = accountService.CheckAccount(user);
-		if(check) {
+		user = accountService.CheckAccount(user);
+		if(user != null) {
 			_mvShare.setViewName("redirect:/");
 			_mvShare.addObject("check", "false");
 			session.setAttribute("LoginInfo", user);
@@ -50,5 +51,11 @@ public class UserController extends BaseController{
 			_mvShare.addObject("LoginVariable", "Đăng nhập thất bại");
 		}
 		return _mvShare;
+	}
+	
+	@RequestMapping(value = "/dang-xuat", method = RequestMethod.GET)
+	public String Login(HttpSession session, HttpServletRequest request) {
+		session.removeAttribute("LoginInfo");
+		return "redirect:"+ request.getHeader("Referer");
 	}
 }

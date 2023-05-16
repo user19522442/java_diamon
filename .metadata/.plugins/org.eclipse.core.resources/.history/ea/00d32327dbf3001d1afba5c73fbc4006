@@ -1,0 +1,20 @@
+package DemoSpringMVC.Service.User;
+
+import java.util.HashMap;
+
+import DemoSpringMVC.Dto.CartDto;
+import DemoSpringMVC.Entity.Bills;
+
+public class BillsServiceImpl implements IBillsService{
+
+	public int AddBills(Bills bill) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void AddBillsDetail(HashMap<Long, CartDto> carts) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+}

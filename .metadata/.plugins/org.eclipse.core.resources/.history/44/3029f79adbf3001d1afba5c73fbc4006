@@ -1,0 +1,23 @@
+package DemoSpringMVC.Dao;
+
+import DemoSpringMVC.Entity.BillDetail;
+import DemoSpringMVC.Entity.Bills;
+
+public class BillsDao extends BaseDao{
+
+	public int AddBills(Bills bill) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public long GetIDLastBills() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void AddBillsDetail(BillDetail billDetail) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

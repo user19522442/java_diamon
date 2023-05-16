@@ -15,12 +15,17 @@ import org.springframework.web.servlet.ModelAndView;
 
 import DemoSpringMVC.Dto.CartDto;
 import DemoSpringMVC.Entity.Bills;
+import DemoSpringMVC.Entity.Users;
+import DemoSpringMVC.Service.User.BillsServiceImpl;
 import DemoSpringMVC.Service.User.CartServiceImpl;
 
 @Controller
 public class CartController extends BaseController {
 	@Autowired
 	private CartServiceImpl cartService = new CartServiceImpl();
+	
+	@Autowired
+	private BillsServiceImpl billsService = new BillsServiceImpl();
 
 	@RequestMapping(value = "gio-hang")
 	public ModelAndView Index() {
@@ -78,13 +83,32 @@ public class CartController extends BaseController {
 	@RequestMapping(value = "checkout", method = RequestMethod.GET)
 	public ModelAndView CheckOut(HttpServletRequest request, HttpSession session) {
 		_mvShare.setViewName("user/bills/checkout");
-		_mvShare.addObject("bills", new Bills());
+		Bills bills = new Bills();
+		Users loginInfo = (Users) session.getAttribute("LoginInfo");
+		if(loginInfo != null) {
+			bills.setAddress(loginInfo.getAddress());
+			bills.setDisplay_name(loginInfo.getDisplay_name());
+			bills.setUser(loginInfo.getUser());
+			
+		}
+		_mvShare.addObject("bills", bills);
 		return _mvShare;
 	}
 
 	@RequestMapping(value = "checkout", method = RequestMethod.POST)
-	public ModelAndView CheckOutBill(HttpServletRequest request, HttpSession session, @ModelAttribute("bills") Bills bills) {
-		_mvShare.setViewName("user/bills/checkout");
-		return _mvShare;
+	public String CheckOutBill(HttpServletRequest request, HttpSession session, @ModelAttribute("bills") Bills bill) {
+//		bill.setQuanty(Integer.parseInt((String) session.getAttribute("TotalQuantyCart")));
+//		bill.setTotal(Double.parseDouble((String) session.getAttribute("TotalPriceCart")));
+		Object quanty = session.getAttribute("TotalQuantyCart");
+		Object total = session.getAttribute("TotalPriceCart");
+		bill.setQuanty(Integer.parseInt(quanty.toString()));
+		bill.setTotal(Double.parseDouble(total.toString()));
+		if(billsService.AddBills(bill) > 0) {
+			HashMap<Long, CartDto> carts = (HashMap<Long, CartDto>) session.getAttribute("Cart");
+			billsService.AddBillsDetail(carts);
+		}
+		session.removeAttribute("Cart");
+		return "redirect:gio-hang";
+		
 	}
 }

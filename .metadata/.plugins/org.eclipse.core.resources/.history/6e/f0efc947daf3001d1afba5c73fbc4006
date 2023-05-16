@@ -1,0 +1,11 @@
+package DemoSpringMVC.Service.User;
+
+import java.util.HashMap;
+
+import DemoSpringMVC.Dto.CartDto;
+import DemoSpringMVC.Entity.Bills;
+
+public interface IBillsService {
+	public int AddBills(Bills bill);
+	public void AddBillsDetail(HashMap<Long, CartDto> carts)
+}

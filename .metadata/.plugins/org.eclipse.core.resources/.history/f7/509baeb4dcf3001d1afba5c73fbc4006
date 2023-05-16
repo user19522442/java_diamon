@@ -1,0 +1,26 @@
+package DemoSpringMVC.Dao;
+
+import DemoSpringMVC.Entity.BillDetail;
+import DemoSpringMVC.Entity.Bills;
+
+public class BillsDao extends BaseDao{
+
+	public int AddBills(Bills bill) {
+		StringBuffer sql = new StringBuffer();
+		sql.append("INSERT INTO bills ");
+		
+		int insert = _jdbcTemplate.update(sql.toString());
+		return insert;
+	}
+
+	public long GetIDLastBills() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void AddBillsDetail(BillDetail billDetail) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

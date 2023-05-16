@@ -2,6 +2,7 @@ package DemoSpringMVC.Entity;
 
 public class BillDetail {
 	private long id;
+	private long id_bills;
 	private long id_product;
 	private int quanty;
 	private double total;
@@ -16,6 +17,14 @@ public class BillDetail {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public long getId_bills() {
+		return id_bills;
+	}
+
+	public void setId_bills(long id_bills) {
+		this.id_bills = id_bills;
 	}
 
 	public long getId_product() {

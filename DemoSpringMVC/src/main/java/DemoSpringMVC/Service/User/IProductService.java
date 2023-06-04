@@ -11,4 +11,8 @@ public interface IProductService {
 	
 	public ProductsDto GetProductByID(long id);
 	public List<ProductsDto> GetProductsByIDCategory(int id);
+	public List<ProductsDto> GetAllProduct();
+	public List<ProductsDto> Search(String keyword);
+	public List<ProductsDto> GetAllProductAtoZ();
+	public List<ProductsDto> GetAllProductCaoThap();
 }

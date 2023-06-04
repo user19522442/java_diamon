@@ -8,14 +8,23 @@
 	<div class="row">
 		<div class="span12">
 			<ul class="breadcrumb">
-				<li><a href="index.html">Home</a> <span class="divider">/</span></li>
+				<li><a href="<c:url value="/"/>">Trang chủ</a> <span class="divider">/</span></li>
 				<li class="active">Giỏ hàng</li>
 			</ul>
 			<div class="well well-small">
-				<h1>
+			<c:if test="${ empty Cart }">
+			<h1>
+					Giỏ hàng<small class="pull-right"> Sản phẩm trong giỏ
+						hàng </small>
+				</h1>
+			</c:if>
+			<c:if test="${ not empty Cart }">
+			<h1>
 					Giỏ hàng<small class="pull-right"> ${TotalQuantyCart } Sản phẩm trong giỏ
 						hàng </small>
 				</h1>
+			</c:if>
+				
 				<hr class="soften" />
 
 				<table class="table table-bordered table-condensed">
@@ -64,7 +73,7 @@
 
 					</tbody>
 				</table>
-				<br /> <a href="products.html" class="shopBtn btn-large"><span
+				<br /> <a href="<c:url value="/"/>" class="shopBtn btn-large"><span
 					class="icon-arrow-left"></span> Tiếp tục mua sắm </a> <a
 					href="<c:url value="checkout"/>" class="shopBtn btn-large pull-right">Thanh
 					toán <span class="icon-arrow-right"></span>

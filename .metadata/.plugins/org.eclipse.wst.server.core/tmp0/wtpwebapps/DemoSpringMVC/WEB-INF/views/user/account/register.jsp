@@ -31,9 +31,11 @@
 					<li><a href="products.html"><span
 							class="icon-chevron-right"></span>See All Jewelry & Watches</a></li>
 					<li style="border: 0">&nbsp;</li>
-					<li><a class="totalInCart" href="cart.html"><strong>Total
+					<li><a class="totalInCart" href="gio-hang"><strong>Total
 								Amount <span class="badge badge-warning pull-right"
-								style="line-height: 18px;">$448.42</span>
+								style="line-height: 18px;"><fmt:formatNumber
+													type="number" groupingUsed="true" value="${ TotalPriceCart }" />
+												đ</span>
 						</strong></a></li>
 				</ul>
 			</div>
@@ -87,7 +89,7 @@
 					<div class="thumbnail">
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
-							VIEW</a> <img src="assets/img/bootstrap-template.png"
+							VIEW</a> <img src="assets/user/img/bootstrap-template.png"
 							alt="bootstrap template">
 						<div class="caption">
 							<h4>
@@ -102,7 +104,7 @@
 		</div>
 		<div class="span9">
 			<ul class="breadcrumb">
-				<li><a href="index.html">Trang chủ</a> <span class="divider">/</span></li>
+				<li><a href="<c:url value ="/"/>">Trang chủ</a> <span class="divider">/</span></li>
 				<li class="active">Người dùng</li>
 			</ul>
 			<h3>Người dùng</h3>

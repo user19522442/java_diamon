@@ -48,8 +48,8 @@
 							class="icon-youtube"></span></a> <a href="#"><span
 							class="icon-tumblr"></span></a>
 					</div>
-					<a class="active" href="index.html"> <span class="icon-home"></span>
-						Home
+					<a class="active" href="/DemoSpringMVC"> <span class="icon-home"></span>
+						Trang chủ
 					</a> 
 					<c:if test="${ not empty LoginInfo }">
 					<a href="#"><span class="icon-user"></span>${ LoginInfo.display_name }</a> 
@@ -58,15 +58,30 @@
 					
 					<c:if test="${ empty LoginInfo }">
 					<a href="<c:url value ="/dang-ky"/>"><span class="icon-edit"></span> Đăng ký</a> 
+					<a href="<c:url value ="/dang-nhap"/>"><span class="icon-edit"></span> Đăng Nhập</a> 
 					</c:if>
 					
 					
-					<a href="contact.html"><span class="icon-envelope"></span>
-						Contact us</a> <a href="<c:url value ="gio-hang"/>"><span
+					<a href='<c:url value="/contact"/>'><span class="icon-envelope"></span>
+						Contact us</a>
+						<c:if test="${ empty Cart }">
+			<a href="<c:url value ="gio-hang"/>"><span
+						
+						class="icon-shopping-cart"></span> Sản phẩm - <span
+						class="badge badge-warning"> <fmt:formatNumber
+													type="number" groupingUsed="true" value="" />
+												đ</span></a>
+			</c:if>
+			<c:if test="${ not empty Cart }">
+			<a href="<c:url value ="gio-hang"/>"><span
+						
 						class="icon-shopping-cart"></span> ${ TotalQuantyCart } Sản phẩm - <span
 						class="badge badge-warning"> <fmt:formatNumber
 													type="number" groupingUsed="true" value="${ TotalPriceCart }" />
 												đ</span></a>
+			</c:if>
+						
+						 
 				</div>
 			</div>
 		</div>

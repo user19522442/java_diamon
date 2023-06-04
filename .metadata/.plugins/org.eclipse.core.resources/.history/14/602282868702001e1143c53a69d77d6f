@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@include file="/WEB-INF/views/layouts/user/taglib.jsp"%>
+<head>
+<meta charset="UTF-8">
+<title>Product</title>
+</head>
+<body>
+	<div>
+			<span style="margin-left: 25px;">Danh sách sản phẩm</span> <select
+				class="pull-right">
+				<option><a href="<c:url value ="/product/AtoZ"/>">A-Z</a></option>
+				<option>Cao - Thấp</option>
+			</select>
+		</div>
+		<a href="<c:url value ="/product/AtoZ"/>">A-Z</a>
+	<div class="row-fluid">
+		<ul class="thumbnails">
+			<c:forEach var="item" items="${ allproduct }" varStatus="loop">
+				<li class="span4">
+					<div class="thumbnail">
+						<a href="<c:url value ="/chi-tiet-san-pham/${ item.id_product }"/>" class="overlay"></a> <a
+							class="zoomTool" href="<c:url value ="/chi-tiet-san-pham/${ item.id_product }"/>" title="add to cart"><span
+							class="icon-search"></span> QUICK VIEW</a> <a
+							href="<c:url value ="/chi-tiet-san-pham/${ item.id_product }"/>"><img
+							src="<c:url value ="/assets/user/img/${ item.img }"/>" alt=""></a>
+						<div class="caption cntr">
+							<p>${ item.name }</p>
+							<p>
+								<strong> <fmt:formatNumber type="number"
+										groupingUsed="true" value="${item.price}" /> đ
+								</strong>
+							</p>
+							<h4>
+								<a class="shopBtn" href="#" title="add to cart"> Add to cart
+								</a>
+							</h4>
+							<div class="actionList">
+								<a class="pull-left" href="#">Add to Wish List </a> <a
+									class="pull-left" href="#"> Add to Compare </a>
+							</div>
+							<br class="clr">
+						</div>
+					</div>
+				</li>
+				<c:if
+							test="${ (loop.index + 1) % 3 == 0 || (loop.index + 1) == allproduct.size() }">
+				</ul>
+			</div>
+			<c:if test="${ (loop.index + 1) < allproduct.size() }">
+				<div class="row-fluid">
+					<ul class="thumbnails">
+			</c:if>
+		</c:if>
+				</c:forEach>
+		
+</body>

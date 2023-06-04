@@ -14,7 +14,7 @@ Body Section
 						<li><a href='<c:url value ="/san-pham/${ item.id }"/>'><span
 								class="icon-circle-blank"></span>${item.name}</a></li>
 					</c:forEach>
-					<li><a class="totalInCart" href="cart.html"><strong>Đã
+					<li><a class="totalInCart" href="gio-hang"><strong>Đã
 								mua <span class="badge badge-warning pull-right"
 								style="line-height: 18px;"><fmt:formatNumber
 													type="number" groupingUsed="true" value="${ TotalPriceCart }" />
@@ -31,7 +31,7 @@ Body Section
 				</p>
 			</div>
 			<div class="well well-small">
-				<a href="#"><img src="assets/img/paypal.jpg"
+				<a href="#"><img src="assets/user/img/paypal.jpg"
 					alt="payment method paypal"></a>
 			</div>
 
@@ -42,7 +42,7 @@ Body Section
 					<div class="thumbnail">
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
-							VIEW</a> <img src="assets/img/bootstrap-ecommerce-templates.png"
+							VIEW</a> <img src="assets/user/img/bootstrap-ecommerce-templates.PNG"
 							alt="bootstrap ecommerce templates">
 						<div class="caption">
 							<h4>
@@ -57,7 +57,7 @@ Body Section
 					<div class="thumbnail">
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
-							VIEW</a> <img src="assets/img/shopping-cart-template.png"
+							VIEW</a> <img src="assets/user/img/shopping-cart-template.PNG"
 							alt="shopping cart template">
 						<div class="caption">
 							<h4>
@@ -72,7 +72,7 @@ Body Section
 					<div class="thumbnail">
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
-							VIEW</a> <img src="assets/img/bootstrap-template.png"
+							VIEW</a> <img src="assets/user/img/bootstrap-template.png"
 							alt="bootstrap template">
 						<div class="caption">
 							<h4>
@@ -101,10 +101,7 @@ Body Section
 								src="<c:url value ="/assets/user/img/slide/${item.img }"/>"
 								alt="bootstrap ecommerce templates">
 							<div class="carousel-caption">
-								<h4>${item.caption }</h4>
-								<p>
-									<span>${item.content }</span>
-								</p>
+								
 							</div>
 					</div>
 					</c:forEach>
@@ -130,9 +127,9 @@ New Products
 									<c:forEach var="item" items="${ products }" varStatus="loop">
 										<li class="span3">
 											<div class="thumbnail">
-												<a class="zoomTool" href="product_details.html"
+												<a class="zoomTool" href="chi-tiet-san-pham/${ item.id_product }"
 													title="add to cart"><span class="icon-search"></span>
-													QUICK VIEW</a> <a href="product_details.html"><img
+													QUICK VIEW</a> <a href="chi-tiet-san-pham/${ item.id_product }"><img
 													src="<c:url value ="/assets/user/img/${ item.img }"/>" alt=""></a>
 											</div>
 										</li>
@@ -170,7 +167,7 @@ New Products
 						<c:forEach var="item" items="${ products }" varStatus="loop">
 							<li class="span4">
 								<div class="thumbnail">
-									<a class="zoomTool" href="product_details.html"
+									<a class="zoomTool" href="chi-tiet-san-pham/${ item.id_product }"
 										title="add to cart"><span class="icon-search"></span>
 										QUICK VIEW</a> <a href="chi-tiet-san-pham/${ item.id_product }"><img
 										src="<c:url value ="/assets/user/img/${ item.img }"/>" alt=""></a>

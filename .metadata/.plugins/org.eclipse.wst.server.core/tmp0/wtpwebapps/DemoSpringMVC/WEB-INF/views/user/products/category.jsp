@@ -107,7 +107,7 @@ background-color
 		<div>
 			<span style="margin-left: 25px;">Danh sách sản phẩm</span> <select
 				class="pull-right">
-				<option>A-Z</option>
+				<option><a>A-Z</a></option>
 				<option>Cao - Thấp</option>
 			</select>
 		</div>

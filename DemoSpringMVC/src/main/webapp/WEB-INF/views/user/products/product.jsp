@@ -55,7 +55,7 @@ Body Section
 				</p>
 			</div>
 			<div class="well well-small">
-				<a href="#"><img src="assets/img/paypal.jpg"
+				<a href="#"><img src='<c:url value = "/assets/user/img/paypal.jpg"/>'
 					alt="payment method paypal"></a>
 			</div>
 
@@ -66,7 +66,7 @@ Body Section
 					<div class="thumbnail">
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
-							VIEW</a> <img src="assets/img/bootstrap-ecommerce-templates.png"
+							VIEW</a> <img src='<c:url value = "/assets/user/img/bootstrap-ecommerce-templates.PNG"/>'
 							alt="bootstrap ecommerce templates">
 						<div class="caption">
 							<h4>
@@ -81,7 +81,7 @@ Body Section
 					<div class="thumbnail">
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
-							VIEW</a> <img src="assets/img/shopping-cart-template.png"
+							VIEW</a> <img src='<c:url value = "/assets/user/img/shopping-cart-template.PNG"/>'
 							alt="shopping cart template">
 						<div class="caption">
 							<h4>
@@ -96,7 +96,7 @@ Body Section
 					<div class="thumbnail">
 						<a class="zoomTool" href="product_details.html"
 							title="add to cart"><span class="icon-search"></span> QUICK
-							VIEW</a> <img src="assets/img/bootstrap-template.png"
+							VIEW</a> <img src='<c:url value = "/assets/user/img/bootstrap-template.png"/>'
 							alt="bootstrap template">
 						<div class="caption">
 							<h4>

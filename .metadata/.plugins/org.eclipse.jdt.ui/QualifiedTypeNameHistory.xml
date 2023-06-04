@@ -55,4 +55,7 @@
 <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="jdk.nashorn.internal.ir.RuntimeNode.Request"/>
+<fullyQualifiedTypeName name="org.sonatype.inject.Parameters"/>
+<fullyQualifiedTypeName name="javax.websocket.server.PathParam"/>
 </qualifiedTypeNameHistroy>

@@ -15,5 +15,10 @@ public class homecontroller extends BaseController{
 
 		return _mvShare;
 	}
-	
+	@RequestMapping(value = {"/contact"})
+	public ModelAndView Contact() {
+		_mvShare.setViewName("layouts/user/contact");
+
+		return _mvShare;
+	}
 }
